@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - DNBC News</title>
+    <link rel="stylesheet" href="./feedback.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <ul class="nav-links">
+                 <li><a href="./main-page.html" target="_blank"> HOME</a></li>
+                    <li><a href="./about-page.html" target="_blank">ABOUT US</a></li>
+                    <li><a href="./world-page.html" target="_blank"> TODAY IN WORLD</a></li>
+                    <li><a href="./sports-page.html" target="_blank">SPORTS</a></li>
+                    <li><a href="./business-page.html" target="_blank">BUSINESS</a></li>
+                    <li><a href="./cities.html" target="_blank">CITIES</a></li>
+                    <li><a href="./contact-page.html" target="_blank">CONTACT US</a></li>
+                    <li><a href="#feedback" class="active">FEEDBACK</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>💬 Your Feedback Matters</h1>
+            <p>Help us improve your News Experience</p>
+        </div>
+    </header>
+
+    
+        <section class="container">
+        <div class="feedback-form" id="feedback">
+            <h2>📝 Share Your Experience</h2>
+            <p>We value your opinions and strive to continuously improve our news service. Please take a moment to share your feedback about DNBC News. Your insights help us serve you better.</p>
+
+            <div class="info-box">
+                <h3>🌟 Why Your Feedback is Important</h3>
+                <p>Your feedback helps us improve content quality, user experience, and coverage areas. We read every submission and use your insights to make informed decisions about our service.</p>
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">FULL NAME:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER: (OPTIONAL)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+92-XXX-XXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label>OVERALL RATINGS</label>
+                    <div class="rating-group">
+                        <div class="rating-option">
+                            <input type="radio" id="rating5" value="5" required>
+                            <label for="rating5" class="rating-label">⭐⭐⭐⭐⭐<br>Excellent</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating4" value="4">
+                            <label for="rating4" class="rating-label">⭐⭐⭐⭐<br>Good</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating3" value="3">
+                            <label for="rating3" class="rating-label">⭐⭐⭐<br>Average</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating2" value="2" style="width: 120px;">
+                            <label for="rating2" class="rating-label">⭐⭐<br>Poor</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating1" value="1">
+                            <label for="rating1" class="rating-label">⭐<br>Very Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Which sections do you read most? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="world" value="world">
+                            <label for="world">World News</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="business" value="business">
+                            <label for="business">Business</label>
+                        </div>
+                    
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sports" value="sports">
+                            <label for="sports">Sports</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cities" value="cities">
+                            <label for="cities">City News</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="content-quality">Content Quality Rating *</label>
+                    <select id="content-quality" name="content-quality" required>
+                        <option value="">-- Select Rating --</option>
+                        <option value="5">Excellent - Always accurate and informative</option>
+                        <option value="4">Good - Usually accurate and helpful</option>
+                        <option value="3">Average - Sometimes helpful</option>
+                        <option value="2">Below Average - Needs improvement</option>
+                        <option value="1">Poor - Rarely helpful</option>
+                    </select>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="website-experience">Website Experience *</label>
+                    <select id="website-experience" name="website-experience" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="5">Excellent - Very easy to navigate</option>
+                        <option value="4">Good - Generally easy to use</option>
+                        <option value="3">Average - Acceptable</option>
+                        <option value="2">Difficult - Hard to find content</option>
+                        <option value="1">Poor - Very confusing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="improvements">What can we improve? *</label>
+                    <textarea id="improvements" name="improvements" required placeholder="Please share your suggestions for improvement..."></textarea>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="favorite-feature">What do you like most about DNBC News?</label>
+                    <textarea id="favorite-feature" name="favorite-feature" placeholder="Tell us what you love about our service..."></textarea>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="recommend">Would you recommend DNBC News to others? *</label>
+                    <select id="recommend" name="recommend" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="definitely">Definitely Yes</option>
+                        <option value="probably">Probably Yes</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="probably-not">Probably Not</option>
+                        <option value="definitely-not">Definitely Not</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-comments">Additional Comments</label>
+                    <textarea id="additional-comments" name="additional-comments" placeholder="Any other feedback or comments..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form> </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3>🔒 Privacy Notice</h3>
+                <p>Your feedback is confidential and will only be used to improve our services. We do not share your personal information with third parties.</p>
+            </div>
+        </div>
+    </div> </section>
+
+  <footer>
+        <div class="footer-container">
+            <div class="footer-flex">
+                <div class="footer-section">
+                    <h3>About DNBC</h3>
+                    <p>Digital News Broadcasting Corporation <br>
+                        Your trusted source for accurate, timely, <br>
+                        and comprehensive news coverage since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick_Links</h3>
+                    <ul>
+                        <li><a href="./main-page.html" target="_blank">Home</a></li>
+                        <li><a href="./about-page.html" target="_blank">About Us</a></li>
+                        <li><a href="./world-page.html" target="_blank">World News</a></li>
+                        <li><a href="./sports-page.html" target="_blank">Sports</a></li>
+                        <li><a href="./business-page.html" target="_blank">Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Cities_Coverage</h3>
+                    <ul>
+                        <li><a href="./city-islamabad.html" target="_blank">Islamabad</a></li>
+                        <li><a href="./city-dubai.html" target="_blank">Dubai</a></li>
+                        <li><a href="./city-london.html" target="_blank">London</a></li>
+                        <li><a href="./city-istanbul.html" target="_blank">Istanbul</a></li>
+                        <li><a href="./city-newyork.html" target="_blank">Newyork</a></li>
+                        <li><a href="./city-bangkok.html" target="_blank">BangKok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li>📍 Karachi,Pakistan</li>
+                        <li>📞 +92-21-1234567</li>
+                        <li>📧 info@dnbcnews.com</li>
+                        <li><a href="#contact">Contact Form</a></li>
+                        <li><a href="./feedback-page.html" target="_blank">Send Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 DNBC News. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

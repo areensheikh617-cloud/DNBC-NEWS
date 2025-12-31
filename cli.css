@@ -1,0 +1,337 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+     background-color: #f4f6f9;
+     /* Light Grey Background */
+     color: #333333;
+     /* Dark Grey Text */
+     line-height: 1.8;
+ }
+
+ /* Header Styles */
+ .hero-section {
+     /* Background Image setup */
+     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./CONTENT/climate-summit.png');
+     background-size: cover;
+     background-position: center;
+     height: 500px;
+     position: relative;
+     border-radius: 0 0 20px 20px;
+
+ }
+
+ .navbar {
+     width: 100%;
+     padding: 25px 0;
+     padding: 50px;
+     background-color: rgba(0, 0, 0, 0.6);
+     border-radius: 0 0 30px 30px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+ }
+
+ .nav-links {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px;
+
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: #e0e0e0;
+     font-size: 20px;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     position: relative;
+     padding-bottom: 10px;
+     transition: 0.3s;
+ }
+
+ .nav-links a:hover {
+     color: white;
+ }
+
+ /* Active Link (Golden Underline) */
+ .nav-links a.active {
+     color: white;
+     border-bottom: 3px solid #c5a065;
+ }
+
+ /* Hero Content (Center Text) */
+ .hero-content {
+     text-align: center;
+     color: white;
+     margin-top: 80px;
+     margin-bottom: auto;
+     padding: 0 20px;
+
+ }
+
+.hero-content h1 {
+  font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 600px;
+    border-color: maroon;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+.hero-content p {
+     font-size: 23px;
+    text-transform: capitalize;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    margin-left: 520px;
+    color: #f0f0f0;
+    border-color: maroon;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 750px;
+}
+
+ /* --- LAYOUT --- */
+ .container {
+     width: 1200px;
+     margin: 40px auto;
+     background: #ffffff;
+     /* White Container */
+     padding: 50px;
+     border-radius: 8px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ /* --- HEADER SECTION --- */
+ header {
+     border-bottom: 1px solid #e0e0e0;
+     padding-bottom: 20px;
+     margin-bottom: 30px;
+ }
+
+ .category-tag {
+     background-color: #28a745;
+     /* Green for Environment */
+     color: #ffffff;
+     padding: 5px 12px;
+     font-size: 0.8rem;
+     text-transform: uppercase;
+     font-weight: bold;
+     border-radius: 20px;
+     display: inline-block;
+     margin-bottom: 15px;
+ }
+
+ h1 {
+     font-size: 2.5rem;
+     color: #1e3a5f;
+     /* Deep Blue Header */
+     font-weight: 700;
+     margin-bottom: 15px;
+     line-height: 1.2;
+ }
+
+ .meta-info {
+     color: #666666;
+     font-size: 0.95rem;
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .meta-info strong {
+     color: #1e3a5f;
+ }
+
+ /* --- CONTENT STYLING --- */
+ .article-body {
+     font-size: 1.125rem;
+     color: #2c3e50;
+ }
+
+ .article-body p {
+     margin-bottom: 25px;
+ }
+
+ /* Highlight Box */
+ .highlight-box {
+     background-color: #f0fdf4;
+     /* Very Light Green bg */
+     border-left: 5px solid #28a745;
+     padding: 20px 25px;
+     margin: 30px 0;
+     border-radius: 4px;
+ }
+
+ .highlight-box h3 {
+     color: #28a745;
+     margin-bottom: 10px;
+     font-size: 1.3rem;
+ }
+
+ .highlight-box ul {
+     padding-left: 20px;
+ }
+
+ .highlight-box li {
+     margin-bottom: 8px;
+ }
+
+ /* Subheadings */
+ h2 {
+     color: #1e3a5f;
+     font-size: 1.8rem;
+     margin-top: 40px;
+     margin-bottom: 20px;
+     border-left: 4px solid #28a745;
+     /* Green accent border for this topic */
+     padding-left: 15px;
+ }
+
+ /* Data Table */
+ .data-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 30px 0;
+     font-size: 1rem;
+ }
+
+ .data-table th {
+     background-color: #1e3a5f;
+     color: #ffffff;
+     text-align: left;
+     padding: 12px 15px;
+ }
+
+ .data-table td {
+     border: 1px solid #e0e0e0;
+     padding: 12px 15px;
+ }
+
+ .data-table tr:nth-child(even) {
+     background-color: #f9f9f9;
+ }
+
+ .positive-change {
+     color: #28a745;
+     /* Green for positive outcome */
+     font-weight: bold;
+ }
+
+ .neutral-change {
+     color: #e67e22;
+     /* Orange for in-progress */
+     font-weight: bold;
+ }
+
+
+ .a-footer {
+     margin-top: 50px;
+     padding-top: 20px;
+     border-top: 1px solid #e0e0e0;
+     text-align: center;
+ }
+
+ .back-btn {
+     background-color: #1e3a5f;
+     color: #ffffff;
+     padding: 12px 30px;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+     transition: background 0.3s;
+ }
+
+ .back-btn:hover {
+     background-color: #152a45;
+ }
+
+ /* Footer */
+ footer {
+     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+     color: white;
+     padding: 30px 0 1rem 0;
+     border-radius: 30px;
+     margin-top: 3rem;
+ }
+
+ .footer-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ .footer-flex {
+     display: flex;
+     align-items: flex-start;
+     gap: 2rem;
+     margin-bottom: 2rem;
+ }
+
+ .footer-section {
+     margin-right: 80px;
+ }
+
+ .footer-section h3 {
+     margin-bottom: 1rem;
+     color: #ffd700;
+ }
+
+ .footer-section ul {
+     list-style: none;
+ }
+
+ .footer-section ul li {
+     margin-bottom: 0.5rem;
+ }
+
+ .footer-section a {
+     color: white;
+     text-decoration: none;
+     opacity: 0.9;
+     transition: opacity 0.3s;
+ }
+
+ .footer-section a:hover {
+     opacity: 1;
+     color: #ffd700;
+ }
+
+ .footer-bottom {
+     text-align: center;
+     padding-top: 2rem;
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+     opacity: 0.8;
+ }
+
+
+ /* --- MOBILE RESPONSIVENESS --- */
+ @media (max-width: 768px) {
+     .container {
+         padding: 25px;
+         margin: 20px;
+     }
+
+     h1 {
+         font-size: 2rem;
+     }
+ }
