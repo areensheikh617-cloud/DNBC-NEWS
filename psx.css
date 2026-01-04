@@ -9,11 +9,11 @@
      line-height: 1.6;
      color: #333;
      background-color: #e0e0e0;
-     /* background-image: url(./CONTENT/IMG_2816.PNG);
-     background-repeat: no-repeat; */
-     /* background-size: cover;  */
-     /* background-size: cover; */
-     /* background-color: #f4f4f4; */
+           background-image: url(CONTENT/Screenshot\ 2026-01-04\ 155648.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  }
 
 

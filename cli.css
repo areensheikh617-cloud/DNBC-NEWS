@@ -11,6 +11,11 @@
      color: #333333;
      /* Dark Grey Text */
      line-height: 1.8;
+           background-image: url(CONTENT/Screenshot\ 2026-01-04\ 155648.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  }
 
  /* Header Styles */

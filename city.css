@@ -9,6 +9,11 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+          background-image: url(CONTENT/Screenshot\ 2026-01-04\ 155648.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a{
@@ -276,11 +281,11 @@ a{
 .card-title {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
-    color: var(--text-dark);
+    color:black;
 }
 
 .card-excerpt {
-    color: var(--text-light);
+    color: black;
     margin-bottom: 1rem;
     flex: 1;
 }
@@ -290,22 +295,11 @@ a{
     justify-content: space-between;
     align-items: center;
     font-size: 0.85rem;
-    color: var(--text-light);
+    color: black;
     padding-top: 1rem;
     border-top: 1px solid #eee;
 }
 
-.read-more {
-    color: var(--secondary-blue);
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.read-more:hover {
-    gap: 10px;
-}
 
    /* map */
 .map-container {
