@@ -68,7 +68,7 @@
  }
 
  .bt {
-     padding: 10px 25px;
+     padding: 10px 30px ;
      font-size: 16px;
      border-radius: 5px;
      cursor: pointer;
@@ -76,27 +76,26 @@
      font-weight: bold;
  }
 
- /* Login Button (Outline Style) */
+
  .btn-login {
-     background-color: transparent;
-     border: 2px solid #007BFF;
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
  }
 
  .btn-login:hover {
-     background-color: #e7f1ff;
-     color: black;
+     background-color: grey;
  }
 
- /* Sign Up Button (Solid Color Style) */
+
  .btn-signup {
-     background-color: #007BFF;
-     border: 2px solid #007BFF;
-     color: white;
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
  }
 
  .btn-signup:hover {
-     background-color: #0056b3;
-     border-color: #0056b3;
+     background-color:gray;
  }
 
  /* Active Link (Golden Underline) */
@@ -261,8 +260,20 @@
      display: flex;
      align-items: flex-start;
      justify-content: flex-start;
-     gap: 2rem;
-     margin-bottom: 3rem;
+     /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto; */
+    gap: 20px; 
+    width: 100%;
+    margin-bottom: 40px;
+ }
+ .news-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto;
+     gap: 20px; 
+    width: 100%;
+    margin-bottom: 40px;
  }
 
  .news-card {
@@ -271,13 +282,31 @@
      overflow: hidden;
      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
      transition: all 0.3s;
-     height: 750px;
-     width: 650px;
+     height: auto;
+     width: 400px;
  }
 
  .news-card:hover {
      transform: translateY(-5px);
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ #btn {
+     color: black;
+     background-color: transparent;
+     box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 10px;
+     padding: 10px 10px;
+     border-color: #e0e0e0;
+     margin-bottom: 20px;
+ }
+
+ #btn:hover {
+     transition-property: all;
+     transition-timing-function: linear;
+     transition-duration: 0.1s;
+     color: #e0e0e0;
+     background-color: #cc0000;
  }
 
  .news-image {
@@ -413,17 +442,6 @@
      gap: 5px;
  }
 
-
-
- /* flex */
- .flex {
-     display: flex;
-     justify-content: flex-start;
-     align-items: flex-start;
-     gap: 20px;
-     margin-top: 50px;
- }
-
  /* Container */
  .container {
      max-width: 1200px;
@@ -517,7 +535,7 @@
  .card-category {
      display: inline-block;
      background: #203a43;
-     color: white;
+     color: black;
      padding: 5px 15px;
      border-radius: 20px;
      font-size: 0.8rem;
@@ -529,11 +547,11 @@
  .card-title {
      font-size: 1.3rem;
      margin-bottom: 0.8rem;
-     color: var(--text-dark);
+     color: black;
  }
 
  .card-excerpt {
-     color: var(--text-light);
+     color: black;
      margin-bottom: 1rem;
      flex: 1;
  }
@@ -543,13 +561,13 @@
      justify-content: space-between;
      align-items: center;
      font-size: 0.85rem;
-     color: var(--text-light);
+     color: black;
      padding-top: 1rem;
      border-top: 1px solid #eee;
  }
 
  .read-more {
-     color: var(--secondary-blue);
+     color: navy;
      font-weight: 600;
      display: inline-flex;
      align-items: center;
@@ -710,29 +728,143 @@
  }
 
  /* Responsive Design */
- @media (max-width: 768px) {
-     .hero h1 {
-         font-size: 2rem;
-     }
+/* ======================================================
+   FINAL RESPONSIVE FIXES (Mobile & Tablet)
+   Paste this at the very bottom of your CSS file
+   ====================================================== */
 
-     .featured-content {
-         grid-template-columns: 1fr;
-     }
+@media screen and (max-width: 990px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
 
-     .featured-image {
-         min-height: 250px;
-     }
+    /* --- 2. HEADER & NAVBAR FIX --- */
+    .navbar {
+        padding: 15px 0 !important;
+        height: auto;
+    }
 
-     .news-grid {
-         grid-template-columns: 1fr;
-     }
+    .nav-links {
+        flex-direction: row !important; /* Links side-by-side */
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        gap: 10px !important;
+        padding: 0 10px;
+    }
 
-     nav ul {
-         flex-direction: column;
-         gap: 0.5rem;
-     }
+    .nav-links a {
+        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        padding: 5px;
+    }
 
-     .section-title {
-         font-size: 1.5rem;
-     }
- }
+    .bt {
+        padding: 8px 15px !important; /* Login buttons chote kiye */
+        font-size: 12px !important;
+    }
+
+    /* --- 3. HERO SECTION FIX --- */
+    .hero-section {
+        height: auto !important;
+        min-height: 600px; /* Mobile par height adjust ki */
+        background-position: center center !important;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        margin-top: 60px !important;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important; /* Heading adjust ki */
+        line-height: 1.2;
+    }
+
+    /* "Stay informed..." text fix */
+    .hero p {
+        font-size: 14px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 10px auto 20px auto !important;
+        border-left: none !important; /* Side border hataya */
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 15px !important;
+        border-radius: 10px;
+    }
+
+    /* --- 4. FEATURED NEWS (Big Card Fix) --- */
+    .featured-content {
+        display: flex !important;
+        flex-direction: column !important; /* Image upar, text neeche */
+    }
+
+    .featured-image {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 250px;
+    }
+
+    .featured-image img {
+        width: 100% !important; /* 580px hata kar full width */
+        height: 100% !important;
+    }
+
+    .featured-text {
+        padding: 20px !important;
+    }
+
+    /* --- 5. CARDS & DIVS FIX (Sabse Important) --- */
+    /* Aapka 350% width yahan override hoga */
+    .card, .card-1, .card-2, .news-card, .info-box {
+        width: 100% !important; /* Mobile par full width */
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px !important;
+        height: auto !important; /* Fixed height hata di */
+    }
+
+    /* Card 1 aur 2 ko wapis normal banaya */
+    .card-1 {
+        display: block !important;
+        padding: 15px !important;
+    }
+
+    /* --- 6. GRID SYSTEM (6 Divs adjustment) --- */
+    .news-flex {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; 
+        gap: 15px !important;
+        width: 100% !important;
+    }
+     
+    /* --- 7. FOOTER FIX --- */
+    .footer-flex {
+        flex-direction: column !important; /* Stack vertical */
+        align-items: center !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section {
+        margin-right: 0 !important; /* Margin hataya */
+        width: 100%;
+    }
+}
+
+/* --- SMALL MOBILE FIXES (Phone ke liye) --- */
+@media screen and (max-width: 600px) {
+    
+    /* Phone par Grid 1 column ho jayega */
+    .news-grid {
+        grid-template-columns: 1fr  !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem !important;
+    }
+}

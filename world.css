@@ -81,6 +81,36 @@ a:hover {
 .nav-links a:hover {
     color: white;
 }
+.bt {
+     padding: 10px 30px ;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     font-weight: bold;
+ }
+
+
+ .btn-login {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-login:hover {
+     background-color: grey;
+ }
+
+
+ .btn-signup {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-signup:hover {
+     background-color:gray;
+ }
 
 /* Active Link (Golden Underline) */
 .nav-links a.active {
@@ -330,69 +360,178 @@ footer {
 }
 
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .header-top {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-info {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav ul {
-        flex-direction: column;
-    }
-
-    .nav a {
+@media screen  and (max-width: 990px) {
+    .container {
         width: 100%;
+        padding: 0 15px;
     }
 
-    .breaking-news-container {
+    /* --- 2. HEADER & NAVBAR FIX --- */
+    .navbar {
+        padding: 15px 0 !important;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: row !important; /* Links side-by-side */
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        gap: 10px !important;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        padding: 5px;
+    }
+
+    .bt {
+        padding: 8px 15px !important; /* Login buttons chote kiye */
+        font-size: 12px !important;
+    }
+
+    /* --- 3. HERO SECTION FIX --- */
+    .hero-section {
+        height: auto !important;
+        min-height: 600px; /* Mobile par height adjust ki */
+        background-position: center center !important;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        margin-top: 60px !important;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
+    .hero h1 {
+        font-size: 2.5rem !important; /* Heading adjust ki */
+        line-height: 1.2;
+    }
+
+    /* "Stay informed..." text fix */
+    .hero p {
+        font-size: 14px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 10px auto 20px auto !important;
+        border-left: none !important; /* Side border hataya */
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 15px !important;
+        border-radius: 10px;
+    }
+
+     .grid {
+        grid-template-columns: 1fr 1fr; /* 3 ki jagah 2 columns */
+    }
+}
+/* Mobile Devices (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+
+    .container, .hero {
+        padding: 0 15px;
+        margin: 0 auto; /* Fixed margins hata diye */
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Links vertical ho jayenge */
+        gap: 15px;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* --- Hero Section --- */
+    .hero-section {
+        height: auto; /* Fixed height hatayi */
+        padding-bottom: 60px;
+        min-height: 80vh;
+    }
+
+    .hero {
+        margin-top: 100px; /* Top margin adjust */
+        margin-left: 15px;
+        text-align: center; /* Content center */
+    }
+
+    .hero h1 {
+        font-size: 2.8rem; /* Mobile font size */
+        line-height: 1.2;
+    }
+
+    .hero p {
+        border-left: none; /* Border hata kar bottom border de sakte hain styling ke liye */
+        border-bottom: 4px solid #cc0000;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+
+    /* --- Featured News Section --- */
     .featured-news {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-side .card {
-        flex-direction: column;
+        flex-direction: column; /* Side-by-side se hatakar upar-niche */
+        gap: 30px;
     }
 
     .featured-side .card-image {
-        width: 100%;
+        width: 100%; /* Side news images full width */
         height: 200px;
     }
 
-    .timeline::before {
-        left: 0;
+    /* --- Grids (Cards) --- */
+    .grid, .grid2 {
+        grid-template-columns: 1fr; /* Sab kuch 1 column mein (Vertical stack) */
+        gap: 25px;
     }
 
-    .timeline-item,
-    .timeline-item:nth-child(even) {
-        flex-direction: column;
+    /* --- Footer --- */
+    .footer-flex {
+        flex-direction: column; /* Footer columns stack honge */
+        gap: 30px;
+        text-align: center;
     }
 
-    .timeline-content {
-        margin: 0 0 0 2rem;
+    .footer-section {
+        margin-right: 0; /* Fixed right margin hataya */
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center; /* Icons center mein */
+    }
+}
+
+/* Small Phones (Max Width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .btn {
+        width: 100%; /* Button full width */
+        display: block;
+        text-align: center;
+    }
+    
+    .card-image {
+        height: 180px; /* Image height thodi kam */
     }
 }

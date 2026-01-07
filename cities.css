@@ -149,15 +149,45 @@ a{
     font-weight: 800;
     color: #315865;
 }
+.bt {
+     padding: 10px 30px ;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     font-weight: bold;
+ }
+
+
+ .btn-login {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-login:hover {
+     background-color: grey;
+ }
+
+
+ .btn-signup {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-signup:hover {
+     background-color:gray;
+ }
 
 
 
 
 /* flex */
-.flex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
     margin-top: 50px;
 }
@@ -397,3 +427,126 @@ a{
      opacity: 0.8;
  }
 
+/* =======================================================
+   CITIES PAGE RESPONSIVE FIX (Mobile & Tablet)
+   ======================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* 1. CONTAINER & LAYOUT */
+    .container {
+        width: 95% !important;
+        padding: 0 10px !important;
+        overflow-x: hidden;
+    }
+
+    /* .flex class jo sidebar aur content ko jod rahi hai */
+    .grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr; /* Side-by-side se hata kar upar-niche kiya */
+        gap: 30px !important;
+        margin-top: 20px !important;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* --- 2. HEADER & NAVBAR FIX --- */
+    .navbar {
+        padding: 15px 0 !important;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: row !important; /* Links side-by-side */
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        gap: 10px !important;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        padding: 5px;
+    }
+
+    .bt {
+        padding: 8px 15px !important; /* Login buttons chote kiye */
+        font-size: 12px !important;
+    }
+
+    /* --- 3. HERO SECTION FIX --- */
+    .hero-section {
+        height: auto !important;
+        min-height: 600px; /* Mobile par height adjust ki */
+        background-position: center center !important;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        margin-top: 60px !important;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important; /* Heading adjust ki */
+        line-height: 1.2;
+    }
+
+    /* "Stay informed..." text fix */
+    .hero p {
+        font-size: 14px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 10px auto 20px auto !important;
+        border-left: none !important; /* Side border hataya */
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 15px !important;
+        border-radius: 10px;
+    }
+
+    /* 3. INFO BOX (Sidebar) FIX */
+    .info-box {
+        width: 100% !important; /* 600px fixed width hatayi */
+        padding: 1.5rem !important;
+    }
+
+    /* 4. CARDS WIDTH FIX (Critical) */
+    .card, .card-1 {
+        width: 100% !important; /* 350% width hatayi */
+        height: auto !important; /* Fixed height hatayi taaki content na kate */
+        flex-direction: column !important; /* Image upar, text niche */
+    }
+
+    .card-image {
+        height: 200px !important;
+        width: 100% !important;
+    }
+
+    /* 5. MAP FIX */
+    .map-container {
+        height: 300px !important;
+    }
+    
+    .map-container iframe {
+        height: 100% !important;
+    }
+
+    /* 6. FOOTER FIX */
+    .footer-flex {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+}

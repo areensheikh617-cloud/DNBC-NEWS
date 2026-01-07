@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+     <script src="./jquery-3.7.1.js"></script>
      
     <header class="hero-section">
         <nav class="navbar">
@@ -25,6 +27,7 @@
                 <li><a href="./contact-page.html" target="_blank">CONTACT US</a></li>
                 <li><a href="./feedback-page.html" target="_blank">FEEDBACK</a></li>
 
+                
                 <li><a href="./login.html" target="_blank" class="bt btn-login">LOGIN</a></li>
                 <li><a href="./signup.html" target="_blank" class="bt btn-signup">SIGN UP</a></li>
 
@@ -83,12 +86,14 @@
                         <h3>Global Climate Summit Reaches Landmark Agreement</h3>
                         <p>
                             World leaders have reached a historic climate agreement at the 2025 Global Climate Summit,
-                            committing to ambitious carbon reduction targets and investments. <button
-                                class="read-more">Read More</button> The deal focuses on providing financial support to
+                            committing to ambitious carbon reduction targets and investments. 
+                             The deal focuses on providing financial support to </p> 
+                            <button class="hide1" id="btn">Read More..</button>
+                         <p  class="show1">
                             developing nations for green technology adoption and the transition to renewable energy
                             sources. Negotiators spent several days finalizing the details of the pact, which aims to
                             limit global temperature rises and protect ecosystems. This landmark agreement is hailed as
-                            a vital step forward in the collective effort. <button class="read-less">Read less</button>
+                            a vital step forward in the collective effort.
                         </p>
                         <div class="news-meta">
                             <span>2 hours ago</span>
@@ -107,9 +112,12 @@
                         <p>
                             The Pakistan cricket team has clinched the Asia Cup 2025 title with a thrilling victory in
                             the final match of the tournament. The players showcased exceptional batting and bowling
-                            performances throughout the competition, proving their dominance and tactical growth under
+                            performances throughout the competition,</p>
+                            <button class="hide2" id="btn">Read More..</button>
+                         <p  class="show2">
+                             proving their dominance and tactical growth under
                             the current team leadership. Fans across the nation celebrated the historic win, which
-                            provides the squad with immense confidence for upcoming international world championships.
+                            provides the squad with confidence for upcoming international world championships.
                             This victory highlights the resilience and skill of players who worked tirelessly.
                         </p>
                         <div class="news-meta">
@@ -130,7 +138,10 @@
                         <p>
                             Pakistan's startup ecosystem is thriving, with the second quarter of 2025 seeing fifty-eight
                             million dollars in funding across five major deals. This surge in capital marks the highest
-                            investment level in ten quarters, highlighting the growing confidence of international
+                            investment level in ten quarters,</p>
+                            <button class="hide3" id="btn">Read More..</button>
+                         <p  class="show3">
+                            highlighting the growing confidence of international
                             investors in the tech sector. Most of the funding is directed toward fintech and e-commerce
                             innovations, which continue to see rapid user growth and development. This investment trend
                             paves the way for further digital transformation and growth.
@@ -154,7 +165,10 @@
                         <h3>Government Announces New Economic Reforms</h3>
                         <p>The federal government has unveiled a comprehensive economic reform package aimed at boosting
                             foreign investment and improving the overall business climate. These strategic reforms
-                            include tax incentives for emerging startups and simplified regulatory frameworks designed
+                            include tax incentives</p>
+                            <button class="hide4" id="btn">Read More..</button>
+                         <p  class="show4">
+                            for emerging startups and simplified regulatory frameworks designed
                             to stabilize the national economy in the long term. Officials believe these measures will
                             create thousands of new job opportunities for the youth while encouraging local industrial
                             growth. The plan marks a significant step toward achieving sustainable development and
@@ -177,10 +191,13 @@
                         <p>
                             Major Pakistani universities have launched a collaborative digital learning platform, making
                             high-quality education more accessible to students nationwide through modern technology.
-                            This innovative initiative aims to bridge the educational divide between urban and rural
+                            This innovative initiative </p>
+                            <button class="hide5" id="btn">Read More..</button>
+                         <p  class="show5">
+                            to bridge the educational divide between urban and rural
                             areas by providing free online resources and virtual classrooms. Students can now access
                             specialized courses and academic materials from any location, ensuring they remain
-                            competitive in a digital job market. The program reflects a modern approach to learning that
+                            competitive in a digital marketing job market. The program reflects a modern approach to learning that
                             prioritizes inclusivity for all.
                         </p>
                         <div class="news-meta">
@@ -201,7 +218,10 @@
                         <p>
                             A new nationwide healthcare program has been officially launched, providing free medical
                             services and essential treatments to over two million underprivileged families. The
-                            initiative focuses on critical areas such as maternal health, child nutrition, and chronic
+                            initiative focuses </p>
+                            <button class="hide6" id="btn">Read More..</button>
+                         <p  class="show6">
+                            critical areas such as maternal health, child nutrition, and chronic
                             disease management across diverse regional communities. By removing financial barriers to
                             care, the government aims to significantly improve the overall well-being and life
                             expectancy of the population. This program represents a major milestone in providing
@@ -221,7 +241,7 @@
                 <h2>Featured Cities</h2>
             </div>
 
-            <div class="flex">
+            <div class="news-grid">
                 <a href="./city-islamabad.html" class="card-2" target="_blank">
                     <img src="./CONTENT/islamabad.png" alt="Islamabad" class="card-image">
                     <div class="card-content">
@@ -260,13 +280,13 @@
                         </div>
                     </div>
                 </a>
-            </div>
-        </section>
+            <!-- </div> -->
+        <!-- </section> -->
 
 
 
-        <section class="container">
-            <div class="flex" style="margin-top:40px ;">
+        <!-- <section class="container">
+            <div class="flex" style="margin-top:40px ;"> -->
                 <a href="./city-istanbul.html" class="card-2" target="_blank">
                     <img src="./CONTENT/istanbul.jpg" alt="Islamabad" class="card-image">
                     <div class="card-content">
@@ -387,22 +407,40 @@
         </footer>
 
         <script>
-            $(document).ready(function () {
-                $(".read-more").click(function () {
-                    $(".news-content").append()
-                })
+              $(".hide1").click(function () {
+                $(".show1").slideToggle()
             })
-
-            $(".read-more").click(function () {
-                $(".news-content").hide()
+            $(".show1").hide()
+             
+            
+            $(".hide2").click(function () {
+                $(".show2").slideToggle()
             })
+            $(".show2").hide()
 
+               $(".hide3").click(function () {
+                $(".show3").slideToggle()
+            })
+            $(".show3").hide()
+
+
+            $(".hide4").click(function () {
+                $(".show4").slideToggle()
+            })
+            $(".show4").hide()
+
+
+            $(".hide5").click(function () {
+                $(".show5").slideToggle()
+            })
+            $(".show5").hide()
+
+
+            $(".hide6").click(function () {
+                $(".show6").slideToggle()
+            })
+            $(".show6").hide()
         </script>
-
-        <!-- Button trigger modal -->
-
-
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 

@@ -61,6 +61,36 @@ body {
 .nav-links a:hover {
     color: white;
 }
+.bt {
+     padding: 10px 30px ;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     font-weight: bold;
+ }
+
+
+ .btn-login {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-login:hover {
+     background-color: grey;
+ }
+
+
+ .btn-signup {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-signup:hover {
+     background-color:gray;
+ }
 
 /* Active Link (Golden Underline) */
 .nav-links a.active {
@@ -337,20 +367,116 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .checkbox-group {
-        grid-template-columns: 1fr;
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* --- 2. HEADER & NAVBAR FIX --- */
+    .navbar {
+        padding: 15px 0 !important;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: row !important; /* Links side-by-side */
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        gap: 10px !important;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        padding: 5px;
+    }
+
+    .bt {
+        padding: 8px 15px !important; /* Login buttons chote kiye */
+        font-size: 12px !important;
+    }
+
+    /* --- 3. HERO SECTION FIX --- */
+    .hero-section {
+        height: auto !important;
+        min-height: 600px; /* Mobile par height adjust ki */
+        background-position: center center !important;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        margin-top: 60px !important;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important; /* Heading adjust ki */
+        line-height: 1.2;
+    }
+
+    /* "Stay informed..." text fix */
+    .hero p {
+        font-size: 14px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 10px auto 20px auto !important;
+        border-left: none !important; /* Side border hataya */
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 15px !important;
+        border-radius: 10px;
+    }
+    /* 3. FEEDBACK FORM FIXES */
+    .feedback-form {
+        padding: 1.5rem; /* Mobile par padding aur kam */
+        width: 100%;
     }
 
     .rating-group {
-        flex-direction: column;
+        flex-wrap: wrap; /* Agar rating options zyada ho to niche aa jayein */
+        justify-content: center; /* Center align */
+        gap: 10px;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
+    .rating-option {
+        margin-left: 0; /* Left margin hataya */
     }
 
-    .page-header h1 {
-        font-size: 2rem;
+    .checkbox-group {
+        grid-template-columns: 1fr; /* Checkbox ek ke niche ek */
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .submit-btn {
+        padding: 1rem; /* Button padding adjust */
+    }
+
+    /* 4. FOOTER FIX */
+    .footer-flex {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        width: 100%;
     }
 }
+
+/* --- Tablet View (Max Width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .feedback-form {
+        padding: 2rem; /* Tablet par padding thodi kam */
+    }
+}
+

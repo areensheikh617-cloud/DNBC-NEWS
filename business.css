@@ -61,6 +61,36 @@ body {
 .nav-links a:hover {
     color: white;
 }
+.bt {
+     padding: 10px 30px ;
+     font-size: 16px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     font-weight: bold;
+ }
+
+
+ .btn-login {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-login:hover {
+     background-color: grey;
+ }
+
+
+ .btn-signup {
+     background-color: maroon;
+     border-radius: 20px;
+     border: 2px solid rgba(0, 0, 0, 0.8);
+ }
+
+ .btn-signup:hover {
+     background-color:gray;
+ }
 
 /* Active Link (Golden Underline) */
 .nav-links a.active {
@@ -207,7 +237,8 @@ body {
 /* News Grid */
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -446,23 +477,235 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.8;
 }
+.business-stories {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .featured-content {
-        grid-template-columns: 1fr;
+/* =======================================================
+   RESPONSIVE MEDIA QUERIES (Business Page)
+   ======================================================= */
+
+/* --- Tablet View (Max Width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+        margin: 2rem auto;
     }
 
+    /* News Grid: 3 ki jagah 2 columns tablet par */
     .news-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    /* Stats ko wrap hone do agar jagah kam ho */
+    .stats-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* --- Mobile View (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
     }
 
-    nav ul {
+    /* --- 2. HEADER & NAVBAR FIX --- */
+    .navbar {
+        padding: 15px 0 !important;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: row !important; /* Links side-by-side */
+        justify-content: center !important;
+        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        gap: 10px !important;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        padding: 5px;
+    }
+
+    .bt {
+        padding: 8px 15px !important; /* Login buttons chote kiye */
+        font-size: 12px !important;
+    }
+
+    /* --- 3. HERO SECTION FIX --- */
+    .hero-section {
+        height: auto !important;
+        min-height: 600px; /* Mobile par height adjust ki */
+        background-position: center center !important;
+    }
+
+    .hero {
+        margin-left: 0 !important;
+        margin-top: 60px !important;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
     }
 
-    .page-title h1 {
-        font-size: 2rem;
+    .hero h1 {
+        font-size: 2.5rem !important; /* Heading adjust ki */
+        line-height: 1.2;
+    }
+
+    /* "Stay informed..." text fix */
+    .hero p {
+        font-size: 14px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 10px auto 20px auto !important;
+        border-left: none !important; /* Side border hataya */
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 15px !important;
+        border-radius: 10px;
+    }
+   
+    /* 6. MARKET OVERVIEW GRID */
+    .market-stats {
+        grid-template-columns: 1fr; /* 1 Column on mobile */
+    }
+
+     /* 1. CONTAINER FIX */
+    .container {
+        width: 90% !important; /* Side mein thodi jagah chodein */
+        margin: 0 auto !important;
+        padding: 0 10px !important;
+        overflow-x: hidden; /* Horizontal scroll rokein */
+    }
+
+    /* 2. IMAGE FIX (Sabse Important) */
+    .featured-image img {
+        width: 100% !important; /* 550px ko overwrite karega */
+        height: auto !important; /* Aspect ratio maintain karega */
+        border-radius: 8px;
+    }
+    
+    .news-image {
+        height: 200px !important; /* News images ki height fix */
+        width: 100% !important;
+    }
+
+    /* 3. GRID & LAYOUT FIXES (1 Column karo) */
+    /* Jo blue columns pichak rahe thay, unhe ek ke niche ek layega */
+    .news-grid, 
+    .market-stats, 
+    .featured-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+
+    /* 6. STATS FIX */
+    .stats-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .stat-item {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 7. Footer alignment */
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* =======================================================
+   BUSINESS PAGE RESPONSIVE FIX (Mobile & Tablet)
+   ======================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* 1. CONTAINER FIX */
+    .container {
+        width: 90% !important; /* Side mein thodi jagah chodein */
+        margin: 0 auto !important;
+        padding: 0 10px !important;
+        overflow-x: hidden; /* Horizontal scroll rokein */
+    }
+
+    /* 2. IMAGE FIX (Sabse Important) */
+    .featured-image img {
+        width: 100% !important; /* 550px ko overwrite karega */
+        height: auto !important; /* Aspect ratio maintain karega */
+        border-radius: 8px;
+    }
+    
+    .news-image {
+        height: 200px !important; /* News images ki height fix */
+        width: 100% !important;
+    }
+
+    /* 3. GRID & LAYOUT FIXES (1 Column karo) */
+    /* Jo blue columns pichak rahe thay, unhe ek ke niche ek layega */
+    .news-grid, 
+    .market-stats, 
+    .featured-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+
+    /* 6. STATS FIX */
+    .stats-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .stat-item {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 7. Footer alignment */
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .business-stories {
+        /* Desktop par ye Flex tha, ab Mobile par Grid ban jayega */
+        display: grid !important; 
+        
+        /* Mobile layout styling */
+        grid-template-columns: 1fr !important; /* 1 Column (Ek ke niche ek) */
+        /* Agar aap mobile par 2 columns chahte hain toh '1fr' ki jagah '1fr 1fr' likhein */
+        
+        gap: 20px !important; /* Items ke beech gap */
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    /* Agar columns ke andar padding issue ho */
+    .business-stories div {
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
