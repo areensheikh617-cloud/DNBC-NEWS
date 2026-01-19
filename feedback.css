@@ -16,9 +16,7 @@ body {
     background-attachment: fixed;
 }
 
-/* =========================================
-   HEADER & HERO SECTION
-   ========================================= */
+
 .hero-section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
     url('./CONTENT/feedback-dnbc.jpg');
@@ -66,7 +64,6 @@ body {
     border-bottom: 3px solid #c5a065;
 }
 
-/* Buttons */
 .bt {
     padding: 10px 30px;
     font-size: 16px;
@@ -98,7 +95,7 @@ body {
     background-color: gray;
 }
 
-/* Hero Content */
+
 .hero {
     padding: 0 5%;
     margin-top: 150px;
@@ -144,9 +141,7 @@ body {
     color: white;
 }
 
-/* =========================================
-   FEEDBACK PAGE CONTENT
-   ========================================= */
+
 .container {
     max-width: 900px;
     margin: 2rem auto;
@@ -174,7 +169,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Feedback Form Styling */
+
 .feedback-form {
     background: white;
     padding: 3rem;
@@ -229,12 +224,12 @@ body {
     min-height: 150px;
 }
 
-/* Rating Group Fix */
+
 .rating-group {
     display: flex;
-    gap: 15px; /* Margin-left hata kar Gap use kiya */
+    gap: 15px; 
     margin-top: 0.5rem;
-    flex-wrap: wrap; /* Mobile par wrap karega */
+    flex-wrap: wrap; 
 }
 
 .rating-option {
@@ -260,10 +255,8 @@ body {
     border-color: #667eea;
 }
 
-/* Checkbox Group Fix */
 .checkbox-group {
     display: grid;
-    /* Fixed grid ki jagah flexible grid lagaya */
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
     margin-top: 0.5rem;
@@ -285,7 +278,6 @@ body {
     cursor: pointer;
 }
 
-/* Submit Button */
 .submit-btn {
     background: #2e647c;
     color: white;
@@ -304,7 +296,7 @@ body {
     background: #667eea;
 }
 
-/* Info Box */
+
 .info-box {
     background: #f0f7ff;
     border-left: 4px solid #667eea;
@@ -323,9 +315,7 @@ body {
     margin: 0;
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
+
 footer {
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     color: white;
@@ -349,7 +339,7 @@ footer {
 
 .footer-section {
     margin-right: 80px;
-    flex: 1; /* Equal width */
+    flex: 1; 
 }
 
 .footer-section h3 {
@@ -384,11 +374,7 @@ footer {
     opacity: 0.8;
 }
 
-/* =======================================================
-   RESPONSIVE DESIGN (OPTIMIZED)
-   ======================================================= */
 
-/* --- Tablet View (Max Width: 1024px) --- */
 @media screen and (max-width: 1024px) {
     .container {
         width: 95%;
@@ -404,7 +390,7 @@ footer {
     }
 }
 
-/* --- Mobile View (Max Width: 768px) --- */
+
 @media screen and (max-width: 768px) {
     
     .container {
@@ -412,34 +398,33 @@ footer {
         padding: 0 15px;
     }
 
-    /* --- 2. HEADER & NAVBAR FIX --- */
+
     .navbar {
         padding: 15px 0 !important;
         height: auto;
     }
 
     .nav-links {
-        flex-direction: row !important; /* Links side-by-side */
+        flex-direction: row !important; 
         justify-content: center !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        flex-wrap: wrap !important; 
         gap: 10px !important;
         padding: 0 10px;
     }
 
     .nav-links a {
-        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        font-size: 13px !important; 
         padding: 5px;
     }
 
     .bt {
-        padding: 8px 15px !important; /* Login buttons chote kiye */
+        padding: 8px 15px !important; 
         font-size: 12px !important;
     }
 
-    /* --- 3. HERO SECTION FIX --- */
     .hero-section {
         height: auto !important;
-        min-height: 600px; /* Mobile par height adjust ki */
+        min-height: 600px;
         background-position: center center !important;
     }
 
@@ -454,41 +439,39 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem !important; /* Heading adjust ki */
+        font-size: 2.5rem !important; 
         line-height: 1.2;
     }
 
-    /* "Stay informed..." text fix */
+ 
     .hero p {
         font-size: 14px !important;
         width: 90% !important;
         max-width: 400px !important;
         margin: 10px auto 20px auto !important;
-        border-left: none !important; /* Side border hataya */
+        border-left: none !important; 
         background: rgba(0, 0, 0, 0.5) !important;
         padding: 15px !important;
         border-radius: 10px;
     }
 
-    /* 3. FEEDBACK FORM FIXES */
     .feedback-form {
         padding: 1.5rem;
         width: 100%;
     }
 
     .rating-group {
-        justify-content: center; /* Center align stars */
+        justify-content: center; 
         gap: 10px;
     }
 
-    /* Checkbox single column mein */
     .checkbox-group {
         grid-template-columns: 1fr; 
     }
 
-    /* 4. FOOTER FIX */
+
     .footer-flex {
-        flex-direction: column !important; /* Stack vertically */
+        flex-direction: column !important; 
         gap: 30px;
         text-align: center;
     }

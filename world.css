@@ -35,10 +35,7 @@ a:hover {
 }
 
 /* Header */
-
-/* Header Styles */
 .hero-section {
-    /* Background Image setup */
     background:linear-gradient( to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
     url('./CONTENT/world-dnbc.png');
     background-size: cover;
@@ -112,7 +109,7 @@ a:hover {
      background-color:gray;
  }
 
-/* Active Link (Golden Underline) */
+
 .nav-links a.active {
     color: white;
     border-bottom: 3px solid #c5a065;
@@ -122,8 +119,6 @@ a:hover {
      margin-top: 180px;
      margin-left: 80px;
  }
-
- /* The Pro Gradient Overlay */
 
  .hero-content {
      max-width: 650px;
@@ -144,10 +139,8 @@ a:hover {
      font-size: 1.2rem;
      margin-bottom: 30px;
      border-left: 4px solid #cc0000;
-     /* Stylish accent line */
      padding-left: 15px;
      background: rgba(0, 0, 0, 0.3);
-     /* Subtle background */
  }
 
  .btn {
@@ -165,7 +158,7 @@ a:hover {
      color: white;
  }
 
-/* Section Headers */
+
 .section-header {
     display: flex;
     align-items: center;
@@ -185,7 +178,7 @@ a:hover {
     color: #1e3c72;
 }
 
-/* Cards */
+
 .card {
     background: white;
     border-radius: 12px;
@@ -257,7 +250,7 @@ a:hover {
     gap: 10px;
 }
 
-/* Featured News */
+
 .featured-news {
    display: flex;
     gap: 2rem;
@@ -277,9 +270,6 @@ a:hover {
     height: 150px;
 }
 
-
-
-/* Footer */
 footer {
        background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
      color: white;
@@ -372,18 +362,11 @@ footer {
 }
 
 /* Responsive Design */
-/* =========================================
-   RESPONSIVE DESIGN (FIXED)
-   ========================================= */
-
-/* Tablets & Small Laptops (Max Width: 990px) */
 @media screen and (max-width: 990px) {
     .container {
         width: 100%;
         padding: 0 20px;
     }
-
-    /* Navbar Fixes */
     .navbar {
         padding: 15px 0 !important;
         height: auto;
@@ -407,10 +390,9 @@ footer {
         font-size: 13px !important;
     }
 
-    /* Hero Section Fixes */
     .hero-section {
-        height: auto !important; /* Fixed height hatayi */
-        min-height: 600px;       /* Content ke hisaab se badh sake */
+        height: auto !important; 
+        min-height: 600px;       
         background-position: center top !important;
     }
 
@@ -435,24 +417,22 @@ footer {
         max-width: 500px !important;
         margin: 15px auto 25px auto !important;
         border-left: none !important;
-        border-bottom: 3px solid #cc0000; /* Bottom border for style */
+        border-bottom: 3px solid #cc0000;
         background: rgba(0, 0, 0, 0.6) !important;
         padding: 15px !important;
         border-radius: 10px;
     }
 
-    /* Grid Fix (3 se 2 columns) */
     .grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* Mobile Devices (Max Width: 768px) */
+
 @media screen and (max-width: 768px) {
     
-    /* Body Background Fix for Mobile */
     body {
-        background-attachment: scroll; /* Mobile par fixed background glitch karta hai */
+        background-attachment: scroll; 
     }
 
     .container, .hero {
@@ -460,34 +440,32 @@ footer {
         margin: 0 auto;
     }
 
-    /* --- 2. HEADER & NAVBAR FIX --- */
     .navbar {
         padding: 15px 0 !important;
         height: auto;
     }
 
     .nav-links {
-        flex-direction: row !important; /* Links side-by-side */
+        flex-direction: row !important; 
         justify-content: center !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        flex-wrap: wrap !important; 
         gap: 10px !important;
         padding: 0 10px;
     }
 
     .nav-links a {
-        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        font-size: 13px !important; 
         padding: 5px;
     }
 
     .bt {
-        padding: 8px 15px !important; /* Login buttons chote kiye */
+        padding: 8px 15px !important; 
         font-size: 12px !important;
     }
 
-    /* --- 3. HERO SECTION FIX --- */
     .hero-section {
         height: auto !important;
-        min-height: 600px; /* Mobile par height adjust ki */
+        min-height: 600px; 
         background-position: center center !important;
     }
 
@@ -502,43 +480,40 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem !important; /* Heading adjust ki */
+        font-size: 2.5rem !important; 
         line-height: 1.2;
     }
 
-    /* "Stay informed..." text fix */
+
     .hero p {
         font-size: 14px !important;
         width: 90% !important;
         max-width: 400px !important;
         margin: 10px auto 20px auto !important;
-        border-left: none !important; /* Side border hataya */
+        border-left: none !important; 
         background: rgba(0, 0, 0, 0.5) !important;
         padding: 15px !important;
         border-radius: 10px;
     }
 
-    /* Featured News Stack */
     .featured-news {
         flex-direction: column;
         gap: 30px;
     }
 
     .featured-side .card-image {
-        width: 100%; /* Side news images full width */
+        width: 100%; 
         height: 200px;
     }
 
-    /* Sabhi Grids ko 1 Column karna */
     .grid, .grid2 {
         grid-template-columns: 1fr; 
         gap: 30px;
     }
 
-    /* --- FOOTER FIX (Yeh sabse important tha) --- */
     .footer-flex {
-        flex-direction: column; /* Row nahi, Column hona chahiye stacking ke liye */
-        align-items: center;    /* Center align */
+        flex-direction: column;
+        align-items: center;    
         text-align: center;
         gap: 40px;
     }
@@ -554,13 +529,11 @@ footer {
     }
 }
 
-/* Small Phones (Max Width: 480px) */
 @media screen and (max-width: 480px) {
     .hero h1 {
         font-size: 2rem !important;
     }
-    
-    /* Buttons ko full width karna */
+
     .btn {
         width: 100%;
         display: block;

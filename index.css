@@ -13,7 +13,6 @@
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      line-height: 1.6;
      color: #333;
-     /* background-color: #f4f4f4; */
      background-image: url(CONTENT/Screenshot\ 2026-01-04\ 155648.png);
      background-size: cover;
      background-position: center;
@@ -23,9 +22,8 @@
 
 
 
- /* Header Styles */
+ /* Header */
  .hero-section {
-     /* Background Image setup */
      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('./CONTENT/Gemini_Generated_Image_ijqidijqidijqidi\ \(1\).png');
      background-size: cover;
      background-position: center;
@@ -68,7 +66,7 @@
  }
 
  .bt {
-     padding: 10px 30px ;
+     padding: 10px 30px;
      font-size: 16px;
      border-radius: 5px;
      cursor: pointer;
@@ -95,10 +93,10 @@
  }
 
  .btn-signup:hover {
-     background-color:gray;
+     background-color: gray;
  }
 
- /* Active Link (Golden Underline) */
+
  .nav-links a.active {
      color: white;
      border-bottom: 3px solid #c5a065;
@@ -110,7 +108,7 @@
      margin-left: 80px;
  }
 
- /* The Pro Gradient Overlay */
+
 
  .hero-content {
      max-width: 650px;
@@ -130,10 +128,8 @@
      font-size: 1.2rem;
      margin-bottom: 30px;
      border-left: 4px solid #cc0000;
-     /* Stylish accent line */
      padding-left: 15px;
      background: rgba(0, 0, 0, 0.3);
-     /* Subtle background */
  }
 
  .btn {
@@ -170,7 +166,7 @@
      display: inline-block;
  }
 
- /* Featured News - Large Card */
+ /* Featured News */
  .featured-news {
      background: white;
      border-radius: 10px;
@@ -255,7 +251,7 @@
      background: #667eea;
  }
 
- /* News Grid */
+
  .news-flex {
      display: flex;
      align-items: flex-start;
@@ -263,17 +259,18 @@
      /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto auto; */
-    gap: 20px; 
-    width: 100%;
-    margin-bottom: 40px;
+     gap: 20px;
+     width: 100%;
+     margin-bottom: 40px;
  }
- .news-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto auto;
-     gap: 20px; 
-    width: 100%;
-    margin-bottom: 40px;
+
+ .news-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto auto;
+     gap: 20px;
+     width: 100%;
+     margin-bottom: 40px;
  }
 
  .news-card {
@@ -442,14 +439,6 @@
      gap: 5px;
  }
 
- /* Container */
- .container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 20px;
- }
-
- /* Info Boxes */
  .info-box {
      background: white;
      padding: 2rem;
@@ -481,7 +470,6 @@
      color: black;
  }
 
- /* Section Headers */
  .section-header {
      display: flex;
      align-items: center;
@@ -501,97 +489,6 @@
      color: #203a43;
  }
 
- /* Cards */
- .card {
-     background: white;
-     border-radius: 12px;
-     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-     overflow: hidden;
-     transition: all 0.3s ease;
-     height: 700px;
-     width: 350%;
-     display: flex;
-
- }
-
- .card:hover {
-     transform: translateY(-5px);
-     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
- }
-
- .card-image {
-     width: 100%;
-     height: 200px;
-     object-fit: cover;
- }
-
- .card-content {
-     padding: 1.5rem;
-     flex: 1;
-     display: flex;
-     flex-direction: column;
- }
-
- .card-category {
-     display: inline-block;
-     background: #203a43;
-     color: black;
-     padding: 5px 15px;
-     border-radius: 20px;
-     font-size: 0.8rem;
-     font-weight: 600;
-     margin-bottom: 1rem;
-     text-transform: uppercase;
- }
-
- .card-title {
-     font-size: 1.3rem;
-     margin-bottom: 0.8rem;
-     color: black;
- }
-
- .card-excerpt {
-     color: black;
-     margin-bottom: 1rem;
-     flex: 1;
- }
-
- .card-meta {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     font-size: 0.85rem;
-     color: black;
-     padding-top: 1rem;
-     border-top: 1px solid #eee;
- }
-
- .read-more {
-     color: navy;
-     font-weight: 600;
-     display: inline-flex;
-     align-items: center;
-     gap: 5px;
- }
-
- .read-more:hover {
-     gap: 10px;
- }
-
- /* map */
- .map-container {
-     width: 100%;
-     height: 400px;
-     border-radius: 12px;
-     margin: 2rem 0;
-     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
- }
-
- .map-container iframe {
-     width: 100%;
-     height: 500px;
-     border: none;
- }
 
  /* Cards1 */
  .card-1 {
@@ -630,7 +527,7 @@
  }
 
 
- /* Quick Links Section */
+
  .quick-links {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -711,12 +608,9 @@
  .footer-section a {
      color: white;
      text-decoration: none;
-     opacity: 0.9;
-     transition: opacity 0.3s;
  }
 
  .footer-section a:hover {
-     opacity: 1;
      color: #ffd700;
  }
 
@@ -724,153 +618,146 @@
      text-align: center;
      padding-top: 2rem;
      border-top: 1px solid rgba(255, 255, 255, 0.1);
-     opacity: 0.8;
  }
 
  /* Responsive Design */
-/* ======================================================
-   FINAL RESPONSIVE FIXES (Mobile & Tablet)
-   Paste this at the very bottom of your CSS file
-   ====================================================== */
 
-@media screen and (max-width: 990px) {
-    .container {
-        width: 100%;
-        padding: 0 15px;
-    }
 
-    /* --- 2. HEADER & NAVBAR FIX --- */
-    .navbar {
-        padding: 15px 0 !important;
-        height: auto;
-    }
-
-    .nav-links {
-        flex-direction: row !important; /* Links side-by-side */
-        justify-content: center !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
-        gap: 10px !important;
-        padding: 0 10px;
-    }
-
-    .nav-links a {
-        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
-        padding: 5px;
-    }
-
-    .bt {
-        padding: 8px 15px !important; /* Login buttons chote kiye */
-        font-size: 12px !important;
-    }
-
-    /* --- 3. HERO SECTION FIX --- */
-    .hero-section {
-        height: auto !important;
-        min-height: 600px; /* Mobile par height adjust ki */
-        background-position: center center !important;
-    }
-
-    .hero {
-        margin-left: 0 !important;
-        margin-top: 60px !important;
-        padding: 0 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem !important; /* Heading adjust ki */
-        line-height: 1.2;
-    }
-
-    /* "Stay informed..." text fix */
-    .hero p {
-        font-size: 14px !important;
-        width: 90% !important;
-        max-width: 400px !important;
-        margin: 10px auto 20px auto !important;
-        border-left: none !important; /* Side border hataya */
-        background: rgba(0, 0, 0, 0.5) !important;
-        padding: 15px !important;
-        border-radius: 10px;
-    }
-
-    /* --- 4. FEATURED NEWS (Big Card Fix) --- */
-    .featured-content {
-        display: flex !important;
-        flex-direction: column !important; /* Image upar, text neeche */
-    }
-
-    .featured-image {
-        width: 100% !important;
-        height: auto !important;
-        min-height: 250px;
-    }
-
-    .featured-image img {
-        width: 100% !important; /* 580px hata kar full width */
-        height: 100% !important;
-    }
-
-    .featured-text {
-        padding: 20px !important;
-    }
-
-    /* --- 5. CARDS & DIVS FIX (Sabse Important) --- */
-    /* Aapka 350% width yahan override hoga */
-    .card, .card-1, .card-2, .news-card, .info-box {
-        width: 100% !important; /* Mobile par full width */
-        max-width: 100% !important;
-        margin-right: 0 !important;
-        margin-bottom: 20px !important;
-        height: auto !important; /* Fixed height hata di */
-    }
-    
-
-    /* Card 1 aur 2 ko wapis normal banaya */
-    .card-1 {
-        display: block !important;
-        padding: 15px !important;
-    }
-
-    /* --- 6. GRID SYSTEM (6 Divs adjustment) --- */
-    .news-flex {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important; 
-        gap: 15px !important;
-        width: 100% !important;
-    }
-    
-     
-    /* --- 7. FOOTER FIX --- */
-    .footer-flex {
-        flex-direction: column !important; /* Stack vertical */
-        align-items: center !important;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-section {
-        margin-right: 0 !important; /* Margin hataya */
-        width: 100%;
-    }
-}
-
-/* --- SMALL MOBILE FIXES (Phone ke liye) --- */
-@media screen and (max-width: 600px) {
-    
-    /* Phone par Grid 1 column ho jayega */
-    .news-grid {
-        grid-template-columns: 1fr  !important;
-    }
-
-    .hero h1 {
-        font-size: 2rem !important;
-    }
-     .news-flex {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important; 
+ @media screen and (max-width: 990px) {
+     .container {
+         width: 100%;
+         padding: 0 15px;
      }
-}
+
+
+     .navbar {
+         padding: 15px 0 !important;
+         height: auto;
+     }
+
+     .nav-links {
+         flex-direction: row !important;
+         justify-content: center !important;
+         flex-wrap: wrap !important;
+         gap: 10px !important;
+         padding: 0 10px;
+     }
+
+     .nav-links a {
+         font-size: 13px !important;
+         padding: 5px;
+     }
+
+     .bt {
+         padding: 8px 15px !important;
+         font-size: 12px !important;
+     }
+
+
+     .hero-section {
+         height: auto !important;
+         min-height: 600px;
+         background-position: center center !important;
+     }
+
+     .hero {
+         margin-left: 0 !important;
+         margin-top: 60px !important;
+         padding: 0 20px;
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .hero h1 {
+         font-size: 2.5rem !important;
+         line-height: 1.2;
+     }
+
+
+     .hero p {
+         font-size: 14px !important;
+         width: 90% !important;
+         max-width: 400px !important;
+         margin: 10px auto 20px auto !important;
+         border-left: none !important;
+         background: rgba(0, 0, 0, 0.5) !important;
+         padding: 15px !important;
+         border-radius: 10px;
+     }
+
+ 
+     .featured-content {
+         display: flex !important;
+         flex-direction: column !important;
+     }
+
+     .featured-image {
+         width: 100% !important;
+         height: auto !important;
+         min-height: 250px;
+     }
+
+     .featured-image img {
+         width: 100% !important;
+         height: 100% !important;
+     }
+
+     .featured-text {
+         padding: 20px !important;
+     }
+
+
+     .card, .card-1, .card-2, .news-card,  .info-box {
+         width: 100% !important;
+         max-width: 100% !important;
+         margin-right: 0 !important;
+         margin-bottom: 20px !important;
+         height: auto !important;
+     }
+
+     .card-1 {
+         display: block !important;
+         padding: 15px !important;
+     }
+
+
+     .news-flex {
+         display: grid !important;
+         grid-template-columns: 1fr 1fr !important;
+         gap: 15px !important;
+         width: 100% !important;
+     }
+
+
+
+     .footer-flex {
+         flex-direction: column !important;
+         align-items: center !important;
+         text-align: center;
+         gap: 30px;
+     }
+
+     .footer-section {
+         margin-right: 0 !important;
+         width: 100%;
+     }
+ }
+
+
+ @media screen and (max-width: 600px) {
+
+     .news-grid {
+         grid-template-columns: 1fr !important;
+     }
+
+     .hero h1 {
+         font-size: 2rem !important;
+     }
+
+     .news-flex {
+         display: grid !important;
+         grid-template-columns: 1fr 1fr !important;
+     }
+ }

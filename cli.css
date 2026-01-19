@@ -1,6 +1,3 @@
-/* =========================================
-   1. GLOBAL SETTINGS
-   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +17,6 @@ body {
     overflow-x: hidden; 
 }
 
-/* =========================================
-   2. HEADER & NAVIGATION
-   ========================================= */
 .hero-section {
     background: linear-gradient( to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
     url('./CONTENT/climate-summit.png');
@@ -48,7 +42,7 @@ body {
     justify-content: center;
     flex-wrap: wrap; 
     gap: 30px;
-    padding: 0 10px; /* Thoda padding taaki mobile pe edge se na chipke */
+    padding: 0 10px; 
 }
 
 .nav-links a {
@@ -72,7 +66,6 @@ body {
     border-bottom: 3px solid #c5a065;
 }
 
-/* Buttons */
 .bt {
      padding: 10px 30px ;
      font-size: 16px;
@@ -93,9 +86,7 @@ body {
      background-color: grey;
  }
 
-/* =========================================
-   3. HERO CONTENT
-   ========================================= */
+
 .hero {
      max-width: 1400px;
      margin: 150px auto 0 auto; 
@@ -141,9 +132,8 @@ body {
     color: white;
 }
 
-/* --- 3. LAYOUT CONTAINER (FIXED) --- */
+
 .container {
-    /* Fixed 1200px hata kar responsive width lagayi */
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
@@ -153,7 +143,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* --- HEADER SECTION INSIDE ARTICLE --- */
+
 header {
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
@@ -193,7 +183,7 @@ h1 {
     color: #1e3a5f;
 }
 
-/* --- CONTENT STYLING --- */
+
 .article-body {
     font-size: 1.125rem;
     color: #2c3e50;
@@ -230,9 +220,9 @@ h2 {
     padding-left: 15px;
 }
 
-/* --- DATA TABLE RESPONSIVE --- */
+
 .table-wrapper {
-    overflow-x: auto; /* Table scroll container */
+    overflow-x: auto; 
     margin: 30px 0;
 }
 
@@ -240,7 +230,7 @@ h2 {
     width: 100%;
     border-collapse: collapse;
     font-size: 1rem;
-    min-width: 600px; /* Forces scroll on small screens */
+    min-width: 600px; 
 }
 
 .data-table th, .data-table td {
@@ -283,7 +273,7 @@ h2 {
     background-color: #152a45;
 }
 
-/* --- FOOTER --- */
+
 footer {
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     color: white;
@@ -301,7 +291,7 @@ footer {
 .footer-flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Important for mobile wrap */
+    flex-wrap: wrap; 
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -309,7 +299,7 @@ footer {
 .footer-section {
     flex: 1;
     min-width: 250px;
-    margin-right: 0; /* Remove fixed margin */
+    margin-right: 0; 
 }
 
 .footer-section h3 { margin-bottom: 1rem; color: #ffd700; }
@@ -318,10 +308,8 @@ footer {
 .footer-section a {
     color: white;
     text-decoration: none;
-    opacity: 0.9;
-    transition: opacity 0.3s;
 }
-.footer-section a:hover { opacity: 1; color: #ffd700; }
+.footer-section a:hover {  color: #ffd700; }
 
 .footer-bottom {
     text-align: center;
@@ -330,37 +318,35 @@ footer {
     opacity: 0.8;
 }
 
-/* --- MOBILE RESPONSIVENESS (Strong Fixes) --- */
+
 @media (max-width: 768px) {
     
-     /* --- 2. HEADER & NAVBAR FIX --- */
     .navbar {
         padding: 15px 0 !important;
         height: auto;
     }
 
     .nav-links {
-        flex-direction: row !important; /* Links side-by-side */
+        flex-direction: row !important; 
         justify-content: center !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        flex-wrap: wrap !important; 
         gap: 10px !important;
         padding: 0 10px;
     }
 
     .nav-links a {
-        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        font-size: 13px !important; 
         padding: 5px;
     }
 
     .bt {
-        padding: 8px 15px !important; /* Login buttons chote kiye */
+        padding: 8px 15px !important; 
         font-size: 12px !important;
     }
 
-    /* --- 3. HERO SECTION FIX --- */
     .hero-section {
         height: auto !important;
-        min-height: 600px; /* Mobile par height adjust ki */
+        min-height: 600px; 
         background-position: center center !important;
     }
 
@@ -375,25 +361,23 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem !important; /* Heading adjust ki */
+        font-size: 2.5rem !important; 
         line-height: 1.2;
     }
 
-    /* "Stay informed..." text fix */
     .hero p {
         font-size: 14px !important;
         width: 90% !important;
         max-width: 400px !important;
         margin: 10px auto 20px auto !important;
-        border-left: none !important; /* Side border hataya */
+        border-left: none !important; 
         background: rgba(0, 0, 0, 0.5) !important;
         padding: 15px !important;
         border-radius: 10px;
     }
 
-    /* Container Fixes */
     .container {
-        width: 95%; /* Use almost full width on mobile */
+        width: 95%; 
         padding: 25px 20px;
         margin: 20px auto;
     }
@@ -401,7 +385,7 @@ footer {
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.5rem; }
 
-    /* Footer Fixes */
+
     .footer-flex {
         flex-direction: column;
         text-align: center;
@@ -412,7 +396,6 @@ footer {
         width: 100%;
     }
     
-    /* Table Fix */
     .data-table {
         display: block;
         overflow-x: auto;

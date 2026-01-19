@@ -1,33 +1,26 @@
-/* --- 1. GLOBAL SETTINGS (Responsiveness ki bunyad) --- */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Padding width ko kharab nahi karegi */
+    box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* Left-right scroll band */
-}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    background-image: url('CONTENT/Screenshot 2026-01-04 155648.png'); 
+    background-image: url('CONTENT/Screenshot 2026-01-04 155648.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* --- 2. HEADER & HERO (Flexible Height) --- */
 .hero-section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('./CONTENT/psx.png');
     background-size: cover;
     background-position: center;
-    /* Height fix nahi rakhi, content ke hisaab se badhegi */
-    min-height: 80vh; 
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +29,7 @@ body {
     padding: 100px 20px 50px 20px;
 }
 
-/* Navbar Setup */
+
 .navbar {
     width: 100%;
     padding: 15px 0;
@@ -51,7 +44,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Agar screen choti ho to links neeche aa jayein */
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -69,17 +62,16 @@ body {
     color: #ffd700;
 }
 
-/* Hero Content */
+
 .hero {
     width: 100%;
-    max-width: 900px; /* Text bohot zyada fail na jaye */
+    max-width: 900px;
     color: white;
 }
 
 .hero h1 {
     font-family: 'Oswald', sans-serif;
-    /* Responsive Font: Screen ke hisaab se chota bada hoga */
-    font-size: clamp(2rem, 5vw, 4.5rem); 
+    font-size: clamp(2rem, 5vw, 4.5rem);
     line-height: 1.2;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -93,7 +85,7 @@ body {
     padding: 15px;
     border-left: 5px solid #cc0000;
     max-width: 700px;
-    text-align: left; /* Reading ke liye easy */
+    text-align: left;
 }
 
 .btn {
@@ -113,19 +105,17 @@ body {
     color: white;
 }
 
-/* --- 3. MAIN CONTAINER (Jahan content cut raha tha) --- */
 .container {
-    /* Fixed pixel hata kar % width lagayi hai */
-    width: 90%; 
+    width: 90%;
     max-width: 900px;
     margin: 50px auto;
     background: #ffffff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Content Styles */
+
 h1 {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     color: #1e3a5f;
@@ -145,10 +135,9 @@ h1 {
     text-align: left;
 }
 
-/* Table Scroll Fix */
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Table screen se bahar nahi niklega, scroll hoga */
+    overflow-x: auto;
     margin: 30px 0;
     border: 1px solid #ddd;
 }
@@ -156,10 +145,11 @@ h1 {
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 600px; /* Force table width so it scrolls */
+    min-width: 600px;
 }
 
-.data-table th, .data-table td {
+.data-table th,
+.data-table td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
@@ -170,7 +160,6 @@ h1 {
     color: white;
 }
 
-/* --- 4. FOOTER --- */
 footer {
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     color: white;
@@ -180,7 +169,11 @@ footer {
     width: 100%;
 }
 
-.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .footer-flex {
     display: flex;
@@ -190,45 +183,68 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-section { flex: 1; min-width: 200px; }
-.footer-section h3 { color: #ffd700; margin-bottom: 1rem; }
-.footer-section ul { list-style: none; }
-.footer-section a { color: white; text-decoration: none; opacity: 0.9; }
-.footer-section a:hover { opacity: 1; color: #ffd700; }
-.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); opacity: 0.8; }
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
 
-/* --- 5. RESPONSIVE MEDIA QUERY (The Fix) --- */
+.footer-section h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footer-section a:hover {
+    opacity: 1;
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 768px) {
-    
-    /* Navbar Adjustment */
-    /* --- 2. HEADER & NAVBAR FIX --- */
+
+
     .navbar {
         padding: 15px 0 !important;
         height: auto;
     }
 
     .nav-links {
-        flex-direction: row !important; /* Links side-by-side */
+        flex-direction: row !important;
         justify-content: center !important;
-        flex-wrap: wrap !important; /* Agar jagah kam ho to wrap kare */
+        flex-wrap: wrap !important;
         gap: 10px !important;
         padding: 0 10px;
     }
 
     .nav-links a {
-        font-size: 13px !important; /* Font chhota kiya taaki fit aaye */
+        font-size: 13px !important;
         padding: 5px;
     }
 
     .bt {
-        padding: 8px 15px !important; /* Login buttons chote kiye */
+        padding: 8px 15px !important;
         font-size: 12px !important;
     }
 
-    /* --- 3. HERO SECTION FIX --- */
+
     .hero-section {
         height: auto !important;
-        min-height: 600px; /* Mobile par height adjust ki */
+        min-height: 600px;
         background-position: center center !important;
     }
 
@@ -243,35 +259,32 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem !important; /* Heading adjust ki */
+        font-size: 2.5rem !important;
         line-height: 1.2;
     }
 
-    /* "Stay informed..." text fix */
     .hero p {
         font-size: 14px !important;
         width: 90% !important;
         max-width: 400px !important;
         margin: 10px auto 20px auto !important;
-        border-left: none !important; /* Side border hataya */
+        border-left: none !important;
         background: rgba(0, 0, 0, 0.5) !important;
         padding: 15px !important;
         border-radius: 10px;
     }
 
-
-    /* Main Content Fix (Jo cut raha tha) */
     .container {
-        width: 95%; /* Screen ka 95% use karega */
+        width: 95%;
         margin: 20px auto;
-        padding: 20px; /* Padding kam ki taake content ke liye jagah bache */
+        padding: 20px;
     }
 
     .article-body p {
-        text-align: left; /* Justify se gaps aate hain, left align behtar hai */
+        text-align: left;
     }
 
-    /* Footer Fix */
+
     .footer-flex {
         flex-direction: column;
         text-align: center;
